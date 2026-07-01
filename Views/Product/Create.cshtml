@@ -1,0 +1,46 @@
+@model Product
+
+@{
+    ViewData["Title"] = SharedLocalizer["CreateProductTitle"];
+    Layout = "_DashboardLayout";
+}
+
+
+<div class="container">
+    <h1 class="alert text-center ">@SharedLocalizer["CreateProduct"]</h1>
+    <form asp-action="Create" method="post" asp-controller="Product">
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Name" class="form-label">@SharedLocalizer["ProductName"]</label>
+                <input asp-for="Name" class="form-control" placeholder="@SharedLocalizer["EnterProductName"]" />
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Price" class="form-label">@SharedLocalizer["Price"]</label>
+                <input asp-for="Price" class="form-control" type="number" placeholder="@SharedLocalizer["EnterPrice"]" />
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">@SharedLocalizer["SelectCategory"]</label>
+                    <select class="form-select" name="CategoryId">
+                        <option value="" disabled selected>@SharedLocalizer["SelectCategory"]</option>
+                        @foreach (var item in ViewBag.categories)
+                        {
+                            <option value="@item.Id">
+                                @item.Name
+                            </option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="ImageUrl" class="form-label">@SharedLocalizer["ImageLink"]</label>
+                <input type="file" asp-for="ImageUrl" class="form-control" placeholder="@SharedLocalizer["EnterImageLink"]" />
+            </div>
+        </div>
+        <input type="submit" value="@SharedLocalizer["CreateProduct"]" class="btn btn-primary p-2 mt-2">
+        <a asp-action="Index" asp-controller="Product" class="btn btn-light p-2 mt-2 border border-primary">@SharedLocalizer["CancelAndBack"]</a>
+
+    </form>
+
+</div>

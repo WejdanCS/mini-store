@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="StoreSystem" xml:space="preserve">
+    <value>Store System</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="MainCategories" xml:space="preserve">
+    <value>Main Store Categories</value>
+  </data>
+  <data name="NoCategories" xml:space="preserve">
+    <value>No categories available yet</value>
+  </data>
+  <data name="ViewProducts" xml:space="preserve">
+    <value>View Products</value>
+  </data>
+  <data name="AvailableProducts" xml:space="preserve">
+    <value>Available Products</value>
+  </data>
+  <data name="NoProducts" xml:space="preserve">
+    <value>No products to display</value>
+  </data>
+  <data name="ProductDetails" xml:space="preserve">
+    <value>Product Details</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Add to Cart</value>
+  </data>
+  <data name="BackToShopping" xml:space="preserve">
+    <value>Back to Shopping</value>
+  </data>
+  <data name="CreateProductTitle" xml:space="preserve">
+    <value>Create Products Page</value>
+  </data>
+  <data name="CreateProduct" xml:space="preserve">
+    <value>Create Product</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="EnterProductName" xml:space="preserve">
+    <value>Enter product name</value>
+  </data>
+  <data name="EnterPrice" xml:space="preserve">
+    <value>Enter price</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="ImageLink" xml:space="preserve">
+    <value>Image Link</value>
+  </data>
+  <data name="EnterImageLink" xml:space="preserve">
+    <value>Enter image link</value>
+  </data>
+  <data name="CancelAndBack" xml:space="preserve">
+    <value>Cancel &amp; Go Back</value>
+  </data>
+  <data name="UpdateProductTitle" xml:space="preserve">
+    <value>Edit Product Page</value>
+  </data>
+  <data name="UpdateProduct" xml:space="preserve">
+    <value>Edit Product</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="UpdateImage" xml:space="preserve">
+    <value>Update Image</value>
+  </data>
+  <data name="SearchByName" xml:space="preserve">
+    <value>Search by product name</value>
+  </data>
+  <data name="SearchPlaceholder" xml:space="preserve">
+    <value>Type product name to search...</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete?</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Add New Category</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="EnterCategoryName" xml:space="preserve">
+    <value>Enter category name</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>Category Icon</value>
+  </data>
+  <data name="EnterIcon" xml:space="preserve">
+    <value>Enter icon class (e.g. fas fa-book)</value>
+  </data>
+  <data name="SaveCategory" xml:space="preserve">
+    <value>Save Category</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No data available</value>
+  </data>
+</root>

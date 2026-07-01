@@ -1,0 +1,77 @@
+@model Product
+
+@{
+    ViewData["Title"] = SharedLocalizer["UpdateProductTitle"];
+    Layout = "_DashboardLayout";
+}
+
+
+<div class="container">
+    <h1 class="alert text-center ">@SharedLocalizer["UpdateProduct"]</h1>
+    <form asp-action="Update" method="post" asp-controller="Product">
+        <input type="hidden" asp-for="Id" />
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Name" class="form-label">@SharedLocalizer["ProductName"]</label>
+
+                <input asp-for="Name" class="form-control" placeholder="@SharedLocalizer["EnterProductName"]" value="@Model.Name" />
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Price" class="form-label">@SharedLocalizer["Price"]</label>
+
+                <input asp-for="Price" class="form-control" type="number" placeholder="@SharedLocalizer["EnterPrice"]"
+                       value="@Model.Price" />
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">@SharedLocalizer["SelectCategory"]</label>
+                    <select class="form-select" name="CategoryId">
+                        <option value="" selected>@SharedLocalizer["SelectCategory"]</option>
+
+                        @foreach (var item in ViewBag.Categories)
+                        {
+                            if (Model.CategoryId == item.Id)
+                            {
+                                <option value="@item.Id" selected>
+                                    @item.Name
+                                </option>
+                            }
+                            else
+                            {
+                                <option value="@item.Id">
+                                    @item.Name
+                                </option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                @if (Model.ImageUrl != null)
+                {
+                    <label asp-for="ImageUrl" class="form-label">@SharedLocalizer["Image"]</label>
+                    <br />
+                    <img src="/images/@Model.ImageUrl" alt="@Model.Name" class="mt-2" width="100px"
+                         style="max-height: fit-content;">
+                    <br />
+                    <label asp-for="ImageUrl" class="form-label">@SharedLocalizer["UpdateImage"]</label>
+
+             
+                }
+                else
+                {
+                    <label asp-for="ImageUrl" class="form-label">@SharedLocalizer["ImageLink"]</label>
+
+                }
+
+               
+
+                <input type="file" asp-for="ImageUrl" class="form-control" placeholder="@SharedLocalizer["EnterImageLink"]">
+            </div>
+        </div>
+        <input type="submit" value="@SharedLocalizer["UpdateProduct"]" class="btn btn-primary p-2 mt-2">
+
+    </form>
+
+</div>

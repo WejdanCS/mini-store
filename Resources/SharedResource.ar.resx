@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>التصنيفات</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>المنتجات</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>التقارير</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="StoreSystem" xml:space="preserve">
+    <value>نظام المتجر</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
+  </data>
+  <data name="MainCategories" xml:space="preserve">
+    <value>الأقسام الرئيسية للمتجر</value>
+  </data>
+  <data name="NoCategories" xml:space="preserve">
+    <value>لا يوجد تصنيفات حتى الآن</value>
+  </data>
+  <data name="ViewProducts" xml:space="preserve">
+    <value>عرض المنتجات</value>
+  </data>
+  <data name="AvailableProducts" xml:space="preserve">
+    <value>المنتجات المتوفرة</value>
+  </data>
+  <data name="NoProducts" xml:space="preserve">
+    <value>لا توجد منتجات لعرضها</value>
+  </data>
+  <data name="ProductDetails" xml:space="preserve">
+    <value>تفاصيل المنتج</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>أضف إلى السلة</value>
+  </data>
+  <data name="BackToShopping" xml:space="preserve">
+    <value>العودة إلى التسوق</value>
+  </data>
+  <data name="CreateProductTitle" xml:space="preserve">
+    <value>صفحة إنشاء منتجات</value>
+  </data>
+  <data name="CreateProduct" xml:space="preserve">
+    <value>إنشاء منتج</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>اسم المنتج</value>
+  </data>
+  <data name="EnterProductName" xml:space="preserve">
+    <value>أدخل اسم المنتج</value>
+  </data>
+  <data name="EnterPrice" xml:space="preserve">
+    <value>أدخل السعر</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>اختر الفئة</value>
+  </data>
+  <data name="ImageLink" xml:space="preserve">
+    <value>رابط الصورة</value>
+  </data>
+  <data name="EnterImageLink" xml:space="preserve">
+    <value>أدخل رابط الصورة</value>
+  </data>
+  <data name="CancelAndBack" xml:space="preserve">
+    <value>إلغاء وعودة</value>
+  </data>
+  <data name="UpdateProductTitle" xml:space="preserve">
+    <value>صفحة تعديل المنتج</value>
+  </data>
+  <data name="UpdateProduct" xml:space="preserve">
+    <value>تعديل المنتج</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="UpdateImage" xml:space="preserve">
+    <value>تحديث الصورة</value>
+  </data>
+  <data name="SearchByName" xml:space="preserve">
+    <value>ابحث باسم المنتج</value>
+  </data>
+  <data name="SearchPlaceholder" xml:space="preserve">
+    <value>اكتب اسم المنتج الذي تريد البحث عنه...</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>إجراءات</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>هل أنت متأكد من الحذف؟</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>إضافة تصنيف جديد</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>اسم التصنيف</value>
+  </data>
+  <data name="EnterCategoryName" xml:space="preserve">
+    <value>أدخل اسم التصنيف</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>أيقونة التصنيف</value>
+  </data>
+  <data name="EnterIcon" xml:space="preserve">
+    <value>أدخل كود الأيقونة</value>
+  </data>
+  <data name="SaveCategory" xml:space="preserve">
+    <value>حفظ التصنيف</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+</root>

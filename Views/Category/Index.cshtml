@@ -1,0 +1,87 @@
+@model List<Category>
+
+@{
+    ViewData["Title"] = SharedLocalizer["Categories"];
+    Layout="_DashboardLayout";
+}
+
+
+
+<div class="container mt-4">
+
+    <div class="card">
+        <div class="card-header">
+            <h5>
+                <i class="bi bi-plus-circle-fill"></i> @SharedLocalizer["AddCategory"]
+            </h5>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+              @Html.AntiForgeryToken()
+
+              <div class="mb-3">
+                <label class="form-label">@SharedLocalizer["CategoryName"]</label>
+                <input type="text" name="Name" placeholder="@SharedLocalizer["EnterCategoryName"]" class="form-control" />
+              </div>
+
+               <div class="mb-3">
+                <label class="form-label">@SharedLocalizer["Icon"]</label>
+                <input type="text" name="Icon" placeholder="@SharedLocalizer["EnterIcon"]" class="form-control" />
+              </div>
+
+             
+
+              <div class="mb-3">
+               
+               <button class="btn btn-success px-4 fw-bold">@SharedLocalizer["SaveCategory"]</button>
+               <a asp-action="Index" class="btn btn-light">@SharedLocalizer["CancelAndBack"]</a>
+                
+              </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+</div>
+ <div class="card mt-5">
+        <div class="card-body">
+            <table class="table">
+             <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>@SharedLocalizer["CategoryName"]</td>
+                    <td>@SharedLocalizer["Icon"]</td>
+                    <td colspan="2">@SharedLocalizer["Actions"]</td>
+                  </tr>
+             </thead>
+
+             <tbody>
+              @if(Model==null )
+              {
+                <tr>
+                    <td colspan="4">@SharedLocalizer["NoData"]</td>
+                </tr>
+              }
+
+              else{
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td class="ps-4 fw-bold text-secondary">@item.Id</td>
+                        <td class="ps-4 fw-bold text-secondary">@item.Name</td>
+                        @* <td class="ps-4 fw-bold text-secondary">@item.Icon</td>
+                        <td> <a href="#"><i class="bi bi-pencil-square text-success"></i></a></td> *@
+                                 <td class="text-success">
+                                        <i class="@($"{item.Icon} fs-1")"></i>
+                          </td>
+                         <td> <a href="#"><i class="bi bi-pencil-square text-success"></i></a></td>
+                        <td> <a href="#"><i class="bi bi-trash3 text-danger"></i></a></td>
+                    </tr>
+                }
+              }
+             </tbody>
+            </table>
+        </div>
+    </div>

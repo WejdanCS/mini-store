@@ -1,0 +1,30 @@
+@model Product
+@{
+             ViewData["Title"] = SharedLocalizer["ProductDetails"];
+}
+
+<div class="container">
+    <div class="row justify-content-start align-items-center w-75 mx-auto h-100">
+            <div class=" h-100">
+                <img src="~/images/@Model.ImageUrl" class="card-img-top rounded mb-2" width="100%" style="max-height: 500px;" />
+                <div class="card-body">
+                    <h4>
+                        @Model.Name
+                    </h4>
+
+                      @* <small class="text-muted">
+                        @ViewBag.Product.Description
+                     </small> *@
+                    <br>
+                     <small>@SharedLocalizer["Price"]: </small>
+                       <small class="text-text badge bg-danger p-2 text-white">
+                        @Model.Price @SharedLocalizer["Currency"]
+                     </small>
+                     <hr>
+                         <a asp-action=""  class="btn btn-success p-2">@SharedLocalizer["AddToCart"]</a>
+                         <a asp-action=""  class="btn btn-secondary p-2">@SharedLocalizer["BackToShopping"]</a>
+                </div>
+            </div>
+     
+    </div>
+</div>
